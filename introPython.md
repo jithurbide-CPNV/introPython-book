@@ -100,7 +100,7 @@ spécifier le type.  Python detecte le contenu est donne un type de
 manière automatique. 
 
 Une instruction permet de connaître le type d'un objet. Cette instruction
-est "type()"
+est `type()
 
 ```python
 >>> type(8)
@@ -115,7 +115,7 @@ est "type()"
 Une Variable est un nom associé à un emplacement de la mémoire. C’est comme une boîte que
 l’on identifie par une étiquette.
 
-La instruction « a = 3 » signifie que j’ai une variable « a » associée à la valeur 3.
+La instruction ` a = 3 ` signifie que j’ai une variable « a » associée à la valeur 3.
 
 Voici un premier exemple :
 
@@ -133,11 +133,17 @@ Voici un premier exemple :
 8
 ```
 
-Les variables sont très pratique pour stocker des valeurs et utiliser leur nom plus tard dans le code.
+Les variables sont très pratique pour stocker des valeurs et utiliser
+leur nom plus tard dans le code. Il existe plusieurs types de
+variables. Les nombres entiers vu par python comme la classe `int`.
+Les nombre à virgule vu par python comme la classe `float`. 
+Les chaînes de caractères vu par python comme `str`raccourcis du mot
+string.
+Les booléens vu par python comme la classe `bool`.
 
 ## L'accès a une partie de chaîne
 
-L'opérateur [:] permet de découper une chaîne de caractère. La partie
+L'opérateur `[:]` permet de découper une chaîne de caractère. La partie
 avant les ":" permet de définir le début de la nouvelle chaine. La
 partie après les ":"  défini la fin.
 
@@ -188,13 +194,13 @@ Il est aussi possible d'avoir accès à un caractère spécifique tel que
 ```
 
 
-## Les entrée/sorties
+# Les entrée/sorties
 
 Afin de communiquer avec l'utilisateur de votre programme, il va falloir utiliser deux fonctions de base.
 
-### L'instruction print()
+## L'instruction `print()`
 
-L'instruction "print" permet d'écrire quelque chose à l'écran. C'est une fonction que prend en paramètre le texte que l'on veut afficher.
+L'instruction `print()` permet d'écrire quelque chose à l'écran. C'est une fonction que prend en paramètre le texte que l'on veut afficher.
 
 Exemple :
 
@@ -215,11 +221,14 @@ Il est possible d'utiliser directement le nom des variable dans le texte comme c
 print(f"La somme vaut {a+b") # Affiche la somme
 ```
 
-### L'instruction input()
+## L'instruction input()
 
-Il est possible de demander à l'utilisateur une valeur qu'il devra entré au clavier. La commande permettant ceci s'appelle "input".
+Il est possible de demander à l'utilisateur une valeur qu'il devra entré au clavier. La commande permettant ceci s'appelle `input()`.
 
-input() met le programme en pause et attend de l’utilisateur un message au clavier (qu’il termine en appuyant sur la touche « Entrée »). **Attention, le message est une chaîne de caractères**. Pour transformer ce que l'utilisateur à entrer au clavier, il faut utiliser une des commandes suivantes : int() ou float() en fonction du besoin.
+`input()` met le programme en pause et attend de l’utilisateur un
+ message au clavier (qu’il termine en appuyant sur la touche « Entrée
+ »).
+ **Attention, le message est une chaîne de caractères**. Pour transformer ce que l'utilisateur à entrer au clavier, il faut utiliser une des commandes suivantes : `int()` ou `float() en fonction du besoin.
 
 Voici un petit programme qui demande le prénom et l’âge de l’utilisateur et affiche un message du style « Bonjour Kevin » puis « Tu es mineur/majeur » selon l’âge.
 
@@ -256,6 +265,18 @@ while(pourcent_float == -1):
 
 
 # Les boucles
+
+## True, False, None
+
+Avant de commencer les boucles, il nous faut parler de trois type de
+variable particulière.
+
+Une variable de type None est une variable non encore utilisée. Elle
+ne représente rien.
+
+Une variable de type booléen permet de stocker le resultat d'une
+opération logique. Il y a deux valeurs possible `True` (vrai) ou `False`(faux).
+
 
 ## La boucle for
 
@@ -362,6 +383,42 @@ Merci de bien vouloir enter un entier : 3
 
 ![](images/if.png)
 
+Si l'on recherche à tester deux valeurs, comme par exemple si la
+variable `a` et `<`que `b`, il nous faut utiliser l'opérateur `if`.
+
+```python
+>>> a = 10
+>>> b = 5
+>>> if a < b :
+...     print("plsu petit")
+...
+
+```
+
+Dans ce cas, rien ne se passe. Car `a` est plus grand que `b`,
+
+
 ## Si sinon
 
 ![](images/if_else.png)
+
+Pour résoudre le problème, ci dessus, nous pouvons utiliser
+l'instruction `else` qui permet d'exécuter une instruction dans les
+autres cas. Pour cela, reprenons l'exemple précédent et ajoutons y
+`else`.
+
+
+
+
+```python
+>>> a = 10
+>>> if a < b :
+...     print("plus petit")
+... else:
+...     print("plus grand")
+...
+plus grand
+```
+
+Ici, le message `plus grand` s'affiche car `a` est bien plus grand que `b`.
+
