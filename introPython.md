@@ -211,14 +211,14 @@ print("bonjour le monde")
 Il est possible d'utiliser la commande print pour afficher la valeur d'une variable.
 
 ```python
-print("La somme vaut",a+b) # Affiche la somme
-print("Le produit vaut",a*b) # Affiche le produit
+print("La somme vaut", a+b) # Affiche la somme
+print("Le produit vaut", a*b) # Affiche le produit
 ```
 
 Il est possible d'utiliser directement le nom des variable dans le texte comme ceci :
 
 ```python
-print(f"La somme vaut {a+b") # Affiche la somme
+print(f"La somme vaut {a+b}") # Affiche la somme
 ```
 
 ## L'instruction input()
@@ -234,13 +234,13 @@ Voici un petit programme qui demande le prénom et l’âge de l’utilisateur e
 
 ```python
 prenom = input("Comment t'appelles-tu ? ")
-print(f"Bonjour {prenom")
+print(f"Bonjour {prenom}")
 age_chaine = input("Quel age as-tu ? ")
 age = int(age_chaine)
 if age >= 18:
- print("Tu es majeur !")
+    print("Tu es majeur !")
 else:
- print("Tu es mineur !")
+    print("Tu es mineur !")
 ```
 
 Un autre exemple qui permet de demander un nombre décimal.
@@ -253,7 +253,7 @@ try:
 except:
     print("An exception occurred")
     pourcent_float = -1
-while(pourcent_float == -1):
+while pourcent_float == -1:
     try:
         pourcent = input("Donnez moi un pourcentage : ")
         pourcent_float = float(pourcent)
