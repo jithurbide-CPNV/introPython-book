@@ -33,7 +33,7 @@ hide_footer_on_page: "page==1"
 
 Ce livre est destiné aux élèves de première année CFC en
 informatique. Il a été créé afin d'avoir une référence sur 
-le langage python utiliser au sein du CPNV.
+le langage python utilisé au sein du CPNV.
 
 Ce livre n'est en aucun cas une référence pour python. Le langage est
 bien plus complexe et avancé que ce que le livre présente.
