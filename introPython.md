@@ -6,7 +6,6 @@ date:       21.11.2022
 signature:  JIE
 numbering:  regular
 toc_levels: 1..3
-newpage_on: h1:not(.toc-title)
 hide_header_on_page: "page==1"
 hide_footer_on_page: "page==1"
 ---
@@ -15,7 +14,7 @@ hide_footer_on_page: "page==1"
 # Cookbook  python
 {:.no_toc.title}
 
-
+ 
 {:.lines-14}
 
 
@@ -29,6 +28,7 @@ hide_footer_on_page: "page==1"
 1. TOC
 {:toc}
 
+{:.page-break-before}
 # Préface
 
 Ce livre est destiné aux élèves de première année CFC en
