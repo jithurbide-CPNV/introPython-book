@@ -6,7 +6,6 @@ date:       21.11.2022
 signature:  JIE
 numbering:  regular
 toc_levels: 1..3
-newpage_on: h1:not(.toc-title)
 hide_header_on_page: "page==1"
 hide_footer_on_page: "page==1"
 ---
@@ -15,7 +14,7 @@ hide_footer_on_page: "page==1"
 # Cookbook  python
 {:.no_toc.title}
 
-
+ 
 {:.lines-14}
 
 
@@ -29,11 +28,12 @@ hide_footer_on_page: "page==1"
 1. TOC
 {:toc}
 
+{:.page-break-before}
 # Préface
 
 Ce livre est destiné aux élèves de première année CFC en
 informatique. Il a été créé afin d'avoir une référence sur 
-le langage python utiliser au sein du CPNV.
+le langage python utilisé au sein du CPNV.
 
 Ce livre n'est en aucun cas une référence pour python. Le langage est
 bien plus complexe et avancé que ce que le livre présente.
