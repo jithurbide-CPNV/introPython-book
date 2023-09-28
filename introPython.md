@@ -4,32 +4,15 @@ banner:     CFC - Informatique
 author:     Julien Ithurbide
 date:       21.11.2022
 signature:  JIE
-numbering:  regular
-toc_levels: 1..3
-hide_header_on_page: "page==1"
-hide_footer_on_page: "page==1"
+titlepage: true
+titlepage-logo: ./images/logo.png
 ---
 
 
-# Cookbook  python
-{:.no_toc.title}
 
- 
-{:.lines-14}
-
-
-![logo](images/logo.png)
-{:.width-50.fright}
-
-
-{:.page-break-before.toc-title}
-# Table des matières
-
-1. TOC
 {:toc}
 
-{:.page-break-before}
-# Préface
+## Préface
 
 Ce livre est destiné aux élèves de première année CFC en
 informatique. Il a été créé afin d'avoir une référence sur 
@@ -39,15 +22,15 @@ Ce livre n'est en aucun cas une référence pour python. Le langage est
 bien plus complexe et avancé que ce que le livre présente.
 Il permettra cependant, d'avoir une bonne connaissance de la syntaxe, et des fonctions de base du langage.
 
-# Les bases
+## Les bases
 
-## Compter avec python
+### Compter avec python
 
 L'interpréteur python permet de faire des calculs de manière intuitif. L'addition, la soustraction, la multiplication
 sont simple. La division est un peu particulière. Regardons ceci de plus prêt. Voici un tableau qui représente les opérations possibles.
 
 | Description                  | Notation |
-|------------------------------|----------|
+| ---------------------------- | -------- |
 | Addition                     | +        |
 | Soustraction                 | -        |
 | Multiplication               | *        |
@@ -55,7 +38,6 @@ sont simple. La division est un peu particulière. Regardons ceci de plus prêt.
 | Exponentiel                  | **       |
 | Division entière             | //       |
 | Reste de la division entière | %        |
-|------------------------------|----------|
 
 ```python
 >>> 2 + 3
@@ -80,7 +62,7 @@ sont simple. La division est un peu particulière. Regardons ceci de plus prêt.
 2
 ```
 
-## Les chaînes de caractères
+### Les chaînes de caractères
 
 Il est aussi possible de travailler avec une chaîne de
 caractères. Pour cela, il suffit de placer le texte voulut entre
@@ -91,7 +73,7 @@ simple ou double guillemet.
 'une simple chaine'
 ```
 
-## Tout est objet
+### Tout est objet
 
 En python, une chaine de caractère, un nombre, un tableau enfin tout
 est considéré comme un objet. Il n'y a pas besoin de
@@ -109,7 +91,7 @@ est `type()`
 >>>
 ```
 
-## Les variable
+### Les variable
 
 Une variable est un nom associé à un emplacement de la mémoire. C’est comme une boîte que
 l’on identifie par une étiquette.
@@ -140,7 +122,7 @@ Les chaînes de caractères vu par python comme `str` raccourcis du mot
 string.
 Les booléens vu par python comme la classe `bool`.
 
-## L'accès à une partie de chaîne
+### L'accès à une partie de chaîne
 
 L'opérateur `[:]` permet de découper une chaîne de caractère. La partie
 avant les ":" permet de définir le début de la nouvelle chaine. La
@@ -192,11 +174,11 @@ Il est aussi possible d'avoir accès à un caractère spécifique tel que :
 ```
 
 
-# Les entrée/sorties
+## Les entrée/sorties
 
 Afin de communiquer avec l'utilisateur de votre programme, il va falloir utiliser deux fonctions de base.
 
-## L'instruction `print()`
+### L'instruction `print()`
 
 L'instruction `print()` permet d'écrire quelque chose à l'écran. C'est une fonction qui prend en paramètre le texte que l'on veut afficher.
 
@@ -219,7 +201,7 @@ Il est possible d'utiliser directement le nom des variables dans le texte comme 
 print(f"La somme vaut {a+b}") # Affiche la somme
 ```
 
-## L'instruction input()
+### L'instruction input()
 
 Il est possible de demander à l'utilisateur une valeur qu'il devra entrer au clavier. L'instruction permettant ceci s'appelle `input()`.
 
@@ -262,9 +244,9 @@ while pourcent_float == -1:
 
 
 
-# Les boucles
+## Les boucles
 
-## True, False, None
+### True, False, None
 
 Avant de commencer les boucles, il nous faut parler de trois type de
 variable particulière.
@@ -276,7 +258,7 @@ Une variable de type booléen permet de stocker le résultat d'une
 opération logique. Il y a deux valeurs possible `True` (vrai) ou `False` (faux).
 
 
-## La boucle `for`
+### La boucle `for`
 
 Lorsque l'on a besoin de répéter une opération plusieurs fois (le nombre
 de fois est connu), nous pouvons utiliser une boucle `for` qui s'écrit
@@ -340,7 +322,7 @@ e
 
 
 
-## La boucle while
+### La boucle while
 
 Il existe une autre boucle qui se répète tant qu'une condition est
 "vrai". Voici sa syntaxe :
@@ -375,9 +357,9 @@ Merci de bien vouloir enter un entier : 3
 ```
 
 
-# Les conditions
+## Les conditions
 
-## Si
+### Si
 
 ![](images/if.png)
 
@@ -396,7 +378,7 @@ variable `a` et `<` que `b`, il nous faut utiliser l'instruction `if`.
 Dans ce cas, rien ne se passe. Car `a` est plus grand que `b`.
 
 
-## Si sinon
+### Si sinon
 
 ![](images/if_else.png)
 
